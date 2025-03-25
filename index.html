@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calendar App</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>Calendar App</h1>
+    <label for="year">Enter Year:</label>
+    <input type="number" id="year" value="2025">
+    <button onclick="generateCalendar()">Show Calendar</button>
+
+    <div id="calendar"></div>
+
+    <h2>Add Event</h2>
+    <input type="number" id="event-day" placeholder="Day">
+    <input type="number" id="event-month" placeholder="Month">
+    <input type="text" id="event-desc" placeholder="Description">
+    <button onclick="addEvent()">Add Event</button>
+
+    <h2>View Events</h2>
+    <input type="number" id="view-month" placeholder="Month">
+    <button onclick="viewEvents()">View Events</button>
+    <div id="event-list"></div>
+
+    <script src="script.js"></script>
+</body>
+</html>
